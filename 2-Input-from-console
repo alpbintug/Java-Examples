@@ -1,0 +1,42 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Test {
+
+	public static void main(String[] args) {
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));//Yes, it is hard to memorise but you won't need that much of a user input from console in Java.
+		String name = null;
+		int age = -1;
+		System.out.println("Enter your name");
+		try {
+			name = in.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("Hello! " + name + ", how old are you?");
+		try {
+			age = Integer.parseInt(in.readLine());
+		} catch (NumberFormatException e) {
+			// TODO Auto-generated catch block
+			System.out.println("You have to enter an integer value!");
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		if(age<18&&age>0) {
+			System.out.println("Wow! You are so young!");
+		}
+		if(age<0) {
+			System.out.println("Well, we have to wait until you come to this planet.");
+		}
+		if(age>18) {
+			System.out.println("You are legally allowed to have fun!");
+		}
+		
+		
+	}
+
+}
