@@ -13,6 +13,8 @@ public class Test {
 		System.out.println("Character: " + c);
 		System.out.println("Floating Point: " + f);
 		System.out.println("Double: " + d);
+		System.out.println("Double/Float: " + d/f);
+		System.out.println("Float/Double: "+ f/d);
 		System.out.println("String: " + s);
 		
 		s += c;
