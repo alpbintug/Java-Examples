@@ -18,6 +18,13 @@ public class Test {
 		for (Student student : scienceClass.students) {
 			System.out.println(student.getName());
 		}
+		/*Output:
+		Class name: Science Class
+		Students:
+		Leeroy Jenkins
+		Zula
+		*/
+
 	}
 
 }
