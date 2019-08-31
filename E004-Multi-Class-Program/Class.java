@@ -25,5 +25,9 @@ public class Class {
 	public void setClassName(String className) {
 		this.className = className;
 	}
+	public Class(String className) {
+		super();
+		this.className = className;
+	}
 	
 }
